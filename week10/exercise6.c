@@ -1,9 +1,13 @@
 #include <stdio.h>
+/*function to find address of largest element in an array using double pointers to update caller pointer variable*/
+
 void findLargest(int *arr,int size,int **largestPtr)
 {
     *largestPtr = arr; // Initialize largestPtr to point to the first element of arr
-    for(int i = 1; i < size; i++){
-        if(*(arr + i) > **largestPtr){
+    for(int i = 1; i < size; i++)//Loop through the array starting from the second element
+    {
+        if(*(arr + i) > **largestPtr)//Compare current element with the value pointed to by largestPtr
+        {
             *largestPtr = (arr + i); // Update largestPtr to point to the new largest element
         }
     }
