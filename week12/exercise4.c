@@ -1,12 +1,12 @@
 #include <stdio.h>
 
-struct Employee {
+typedef struct {
     int id;
     float salary;
-};
+} Employee;
 
 int main(){
-    struct Employee staff[3] = {
+    Employee staff[3] = {
         {1001, 45000.00},
         {1002, 52000.00},
         {1003, 38000.00}
