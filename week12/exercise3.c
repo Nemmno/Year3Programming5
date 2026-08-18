@@ -8,11 +8,13 @@ typedef struct {
 int main(){
     Point p1 = {5, 10};
 
+    /*
     printf("P1 Point Coordinates:\n");
     printf("X: %d\n", p1.x);
     printf("Y: %d\n", p1.y);
+    */
     Point p2 = p1; // Copying p1 to p2
-    printf("P2 Point Coordinates:\n");
+    printf("Coordinates of P2:\n");
     printf("X: %d\n", p2.x);
     printf("Y: %d\n", p2.y);
 
